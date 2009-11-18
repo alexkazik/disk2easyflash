@@ -1,0 +1,8 @@
+c64/*.bin
+c64/*.prg
+c64/*.sym
+c64/*.vs
+c64/.deps
+c64/binaries.c
+c64/binaries.h
+test
