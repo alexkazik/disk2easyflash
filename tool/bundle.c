@@ -129,11 +129,11 @@ void bundle(FILE *out, struct m2i *entries,
     if (bank_size == 0x4000) {
       BankHeader.bank[0] = ((first_bank << 1) + dir_pos) >> 9;
       BankHeader.bank[1] = ((first_bank << 1) + dir_pos) >> 1;
-      BankHeader.loadAddr[0] = (bank_offset >> 8) + (dir_pos & 1 ? 0x20 : 0x00);
+      BankHeader.loadAddr[0] = (0x8000 >> 8) + (dir_pos & 1 ? 0x20 : 0x00);
     } else {
       BankHeader.bank[0] = (first_bank + dir_pos) >> 8;
       BankHeader.bank[1] = (first_bank + dir_pos);
-      BankHeader.loadAddr[0] = bank_offset >> 8;
+      BankHeader.loadAddr[0] = (0x8000 | (bank_offset & 0x2000)) >> 8;
     }
     fwrite(&BankHeader, 1, sizeof(BankHeader), out);
 

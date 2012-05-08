@@ -418,7 +418,7 @@ int main(int argc, char **argv) {
       BankHeader.chipType[1] = 0x00;
       BankHeader.bank[0] = 0x00;
       BankHeader.bank[1] = 0x00;
-      BankHeader.loadAddr[0] = 0xe0;
+      BankHeader.loadAddr[0] = 0xa0;
       BankHeader.loadAddr[1] = 0x00;
       BankHeader.romLen[0] = 0x20;
       BankHeader.romLen[1] = 0x00;
