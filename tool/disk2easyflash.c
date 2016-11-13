@@ -42,6 +42,7 @@ static struct option longopts[] = {
 };
 
 void usage() {
+  fprintf(stderr, "\n*** DISK2EASYFLASH V0.92 ***\n\n");
   fprintf(stderr, "Usage: %s --crt|--xbank [<options>] <d64/m2i-file/m2i-dir> <output file>\n", progname);
   fprintf(stderr, "Usage: %s --list [<options>] <d64/m2i-file/m2i-dir>\n", progname);
   fprintf(stderr, "  --crt, -c = build an easyflash cartridge\n");

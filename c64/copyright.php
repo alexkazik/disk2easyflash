@@ -1,6 +1,6 @@
 <?php
 
-$text = ' BY ALEX\'S DISK2EASYFLASH - "LOAD" V0.9 ';
+$text = ' BY ALEX\'S DISK2EASYFLASH - "LOAD" V0.92';
 
 for ($i = 0; $i < strlen($text); $i++) {
   if (ord($text[$i]) >= 0x41 && ord($text[$i]) <= 0x5A) {

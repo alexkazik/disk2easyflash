@@ -624,9 +624,9 @@ DiskImage *di_load_image(char *name) {
     case 819200:
       di->type = D81;
       di->bam.track = 40;
-      di->bam.sector = 1;
+      di->bam.sector = 0;
       di->bam2.track = 40;
-      di->bam2.sector = 2;
+      di->bam2.sector = 1;
       di->dir.track = 40;
       di->dir.sector = 0;
       break;

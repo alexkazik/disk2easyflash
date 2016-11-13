@@ -6,6 +6,7 @@
 #include <sys/stat.h>
 #include <dirent.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "m2i.h"
 
